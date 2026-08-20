@@ -7,7 +7,7 @@ export default function Navbar() {
     display: "flex",
     alignItems: "center",
     justifyContent: "flex-end",
-    padding: "12px 48px", /* Reduced top/bottom padding to make nav slimmer */
+    padding: "12px 48px", /* para mo slim ang nav bar */
     backgroundColor: "var(--bg-card)",
     marginBottom: "24px",
   }}
