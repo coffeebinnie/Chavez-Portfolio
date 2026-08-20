@@ -455,7 +455,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Restored 3-Column Aligned Projects Grid */
+/* mao daw ni ana si gemini */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Forces exactly 3 equal columns in a row */
