@@ -1,25 +1,24 @@
-export default function Navbar() {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
+
+export default function Navbar() {
   return (
-    <nav className="navbar-container">
-      <div className="navbar-content">
-        <span className="font-retro logo-text" onClick={() => scrollTo("hero")}>
-          PORTFOLIO
-        </span>
-        <div className="nav-links">
-          <button onClick={() => scrollTo("hero")} className="nav-btn">Home</button>
-          <button onClick={() => scrollTo("about")} className="nav-btn">About</button>
-          <button onClick={() => scrollTo("skills")} className="nav-btn">Skills</button>
-          <button onClick={() => scrollTo("projects")} className="nav-btn">Projects</button>
-          <button onClick={() => scrollTo("experience")} className="nav-btn">Experience</button>
-          <button onClick={() => scrollTo("contact")} className="nav-btn contact-btn">Contact</button>
-        </div>
+ <nav
+  style={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-end",
+    padding: "12px 48px", /* Reduced top/bottom padding to make nav slimmer */
+    backgroundColor: "var(--bg-card)",
+    marginBottom: "24px",
+  }}
+>
+      <div style={{ display: "flex", gap: "32px", alignItems: "center" }}>
+        <a href="#hero" className="nav-link font-pixel">Home</a>
+        <a href="#about" className="nav-link font-pixel">About</a>
+        <a href="#skills" className="nav-link font-pixel">Skills</a>
+        <a href="#projects" className="nav-link font-pixel">Projects</a>
+        <a href="#experience" className="nav-link font-pixel">Experience</a>
+        <a href="#contact" className="nav-link-btn font-pixel">Contact</a>
       </div>
     </nav>
   );
